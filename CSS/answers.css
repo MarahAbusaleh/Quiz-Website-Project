@@ -4,88 +4,98 @@
 
     --text-color: #000;
     --second-color: #fff;
-    --main-color: #00821f ;
+    --main-color: #00821f;
 
-   
+
 }
-body{
+
+body {
     background-color: #def7e5;
-   
-    
+
+
 }
-h1{
+
+h1 {
     text-align: center;
 }
-#e_questions{ 
+
+#e_questions {
     background-color: #def7e5;
     width: 75%;
     height: fit-content;
     margin-top: 5%;
     margin-left: 12%;
-    
-    
+
+
 }
-#e_questions div { 
+
+#e_questions div {
     background-color: white;
     padding: 0.3px;
     margin: 5px;
 }
 
-#e_questions h2{
+#e_questions h2 {
     margin-left: 35px;
     font-size: 35px;
     font-weight: 1000;
 }
-li{
+
+li {
     list-style-type: none;
+    width: 500px;
+    height: 40px;
+    border-radius: 10px;
+    margin-bottom: 10px;
+    position: relative;
+    font-size: 20px;
+    font-weight: 600;
 
 }
-p{
+
+/* li div{
+    visibility: visible;
+} */
+p {
     margin-left: 15px;
     font-size: 25px;
     font-weight: 600;
     margin-left: 35px;
 }
-span{
+
+span {
     display: inline-block;
     width: 25px;
     height: 25px;
-    background-color: #ccc;
     text-align: center;
     border-radius: 7px;
     margin-bottom: 5px;
-     padding: 5px;
-     font-size: 20px;
-     font-weight: 600;
-     
-    
-}
-.space{
-    background-color: white;
-}
-.ans{
-    /* display: inline-block; */
-    width: 550px;
-    background-color: #ccc;
-    border-radius: 7px;
-     margin-left: 10px;
-    text-align: center;
-    font-weight: 600;
-    font-size: 25px;
+    padding: 5px;
+    /* font-size: 20px;
+     font-weight: 600; */
+
 
 }
-#iq_questions{ 
+
+/* .let{
+    font-size: 13px;
+    width: 40px;
+} */
+
+
+#iq_questions {
     background-color: white;
     width: 90%;
     height: fit-content;
     margin-top: 5%;
     margin-left: 5%;
 }
-#iq_questions h2{
+
+#iq_questions h2 {
     margin-left: 35px;
 }
 
-#tech_questions{ 
+#tech_questions {
     background-color: white;
     width: 90%;
     height: fit-content;
@@ -94,83 +104,124 @@ span{
 }
 
 
-#tech_questions h2{
+#tech_questions h2 {
     margin-left: 35px;
 }
-button{
+
+button {
     border-radius: 10px;
     color: white;
     background-color: #00821f;
     font-weight: bolder;
     width: 200px;
     height: 50px;
-   
-    
+
+
 }
-#buttons{
+
+#buttons {
     width: 100%;
     height: 50px;
     display: flex;
     flex-direction: row;
 }
-#logout{
+
+#logout {
     margin-left: 35%;
     width: 200px;
     height: 50px;
+    border: none;
+    font-size: 20px;
 }
-#home{
+
+#home {
     margin-left: 20%;
-
+    border: none;
+    font-size: 20px;
 }
 
- @media screen and (max-width: 768px){
-   
-    #e_questions{ 
+#abtn {
+    text-decoration: none;
+    color: white;
+}
+
+samp {
+    position: absolute;
+    right: 5px;
+    top: 25%;
+    color: #ccc;
+    /* font-weight: bold; */
+}
+
+@media screen and (min-width: 481px) and (max-width: 768px) {
+
+    #e_questions {
         width: 90%;
         margin-left: 5%;
     }
-    #e_questions h2{
-        
+
+    #e_questions h2 {
+
         font-size: 28px;
-        
+
     }
-    p{
-        
+
+    p {
+
         font-size: 23px;
-     
+
     }
-    span{
-        
+
+    span {
+
         width: 20px;
         height: 30px;
-         padding: 10px;
-         font-size: 18px;
-         margin-right: 10px;
-         
+        padding: 10px;
+        font-size: 18px;
+        margin-right: 10px;
+
     }
-    .ans{
-       
+
+    .ans {
+
         width: 180px;
         font-size: 18px;
         margin-bottom: 5px;
         text-align: center;
-        
-       
+
+
     }
-    #buttons{
+
+    #buttons {
         width: 80%;
 
     }
-    #logout{
+
+    #logout {
         margin-left: 40%;
-       
+
     }
-    #home{
+
+    #home {
         margin-left: 20%;
-    
+
     }
-   
-    
-} 
 
 
+}
+
+@media screen and (max-width: 480px) {
+
+    li {
+        width: 220px;
+    }
+
+
+    p {
+        font-size: 22px;
+    }
+
+    samp {
+        font-size: 12px;
+    }
+}

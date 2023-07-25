@@ -4,7 +4,7 @@ function result(result) {
   if (result >= 10 && result <= 20) {
     console.log("pass");
 
-    document.images[0].src = "../images/successfully-icon.png";
+    document.images[0].src = "/Images/successfully-icon.png";
     document.images[0].alt = "successfully-icon";
 
     let resultEle = document.getElementById("result-span");
@@ -21,7 +21,7 @@ function result(result) {
     console.log("faild");
 
 
-    document.images[0].src = "../images/faild-icon.png";
+    document.images[0].src = "/Images/faild-icon.png";
     document.images[0].alt = "faild-icon";
 
     let resultEle = document.getElementById("result-span");
@@ -42,7 +42,7 @@ function result(result) {
   } else {
     console.log("error");
 
-    document.images[0].src = "../images/error occurred.png";
+    document.images[0].src = "/Images/error occurred.png";
     document.images[0].alt = "error-icon";
     
 

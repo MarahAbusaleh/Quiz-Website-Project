@@ -79,11 +79,11 @@
 
   "technical": [
     {
-      "question": " How can we change the image size?",
-      "firstAnswer": "Using height and width",
-      "secondAnswer": "Using resize attribute",
-      "thirdAnswer": "Using size attribute",
-      "trueAnswer": "Using height and width"
+      "question": " What is a Universal Selector in CSS?",
+      "firstAnswer": "*",
+      "secondAnswer": "-",
+      "thirdAnswer": "+",
+      "trueAnswer": "*"
     },
     {
       "question": "Which of the following is used to increase the width of column 'column'?",

@@ -6,7 +6,7 @@ const btnTech = document.getElementById('btnTech');
 let listItem = document.getElementsByTagName('li');
 let spanItem = document.getElementsByTagName('span');
 
-let selectedLi = null; // Track the currently selected LI element
+let selectedLi = null; 
 let selectedSpan = null;
 
 let answerArray = [];
@@ -23,48 +23,46 @@ let trueAnswersEnglish = 0;
 let trueAnswersIQ = 0;
 let trueAnswersTech = 0;
 
-// let TrueUserAnswer = 0
-
-
 let answersByQuestionE = {};
 let answersByQuestionIQ = {};
 let answersByQuestionTech = {};
 
+/*----------------------------------------------fetch function----------------------------------------------*/
 async function fetchQuestions() {
+
     const response = await fetch('/JSON/question.json');
     questionsData = await response.json();
 
-    // Retrieve previous answers from sessionStorage
     const storedAnswersE = sessionStorage.getItem('AnswersE');
     if (storedAnswersE) {
         answersByQuestionE = JSON.parse(storedAnswersE);
     }
+
     const storedAnswersIQ = sessionStorage.getItem('AnswersIQ');
     if (storedAnswersIQ) {
         answersByQuestionIQ = JSON.parse(storedAnswersIQ);
     }
+
     const storedAnswersTech = sessionStorage.getItem('AnswersTech');
     if (storedAnswersTech) {
         answersByQuestionTech = JSON.parse(storedAnswersTech);
     }
+
 }
-
-
-
-
+//for English
+/*-----------------------------------handle with click on answer function-----------------------------------*/
 function handleLiClickE(event, index) {
+
     const clickedLi = event.target;
     const clickedSpan = event.target.getElementsByTagName('span')[0];
     const selectedAnswer = event.target.textContent;
 
-    // If the selected question index is not in the answersByQuestionE object, add it
     if (!answersByQuestionE.hasOwnProperty(index)) {
         answersByQuestionE[index] = selectedAnswer;
     } else {
         // If the question index is already in the answersByQuestionE object, update the answer
         answersByQuestionE[index] = selectedAnswer;
     }
-
     // Save the answersByQuestionE object in sessionStorage
     sessionStorage.setItem('AnswersE', JSON.stringify(answersByQuestionE));
 
@@ -77,27 +75,24 @@ function handleLiClickE(event, index) {
     selectedSpan = clickedSpan;
     selectedLi.style.border = '5px solid #00821f';
 
-    
 }
 
 let trueAnswers= 0;
 
+/*---------------------------------------click on answer function---------------------------------------*/
 
 function addLiClickEventListenersE() {
     listItem = document.getElementsByTagName('li');
     spanItem = document.getElementsByTagName('span');
     for (let i = 0; i < listItem.length; i++) {
         listItem[i].addEventListener('click', handleLiClickE);
-        spanItem[i].addEventListener('click', handleLiClickE);
+        // spanItem[i].addEventListener('click', handleLiClickE);
     }
 
 }
-
-
-
-
-
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//for IQ
+/*-----------------------------------handle with click on answer function-----------------------------------*/
 function handleLiClickIQ(event, index) {
     const clickedLi = event.target;
     const clickedSpan = event.target.getElementsByTagName('span')[0];
@@ -123,7 +118,7 @@ function handleLiClickIQ(event, index) {
     selectedSpan = clickedSpan;
     selectedLi.style.border = '5px solid #00821f';
 }
-
+/*---------------------------------------click on answer function---------------------------------------*/
 function addLiClickEventListenersIQ() {
     listItem = document.getElementsByTagName('li');
     spanItem = document.getElementsByTagName('span');
@@ -132,7 +127,9 @@ function addLiClickEventListenersIQ() {
         spanItem[i].addEventListener('click', handleLiClickIQ);
     }
 }
-
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
+//foe Tech
+/*-----------------------------------handle with click on answer function-----------------------------------*/
 function handleLiClickTech(event, index) {
     const clickedLi = event.target;
     const clickedSpan = event.target.getElementsByTagName('span')[0];
@@ -159,6 +156,7 @@ function handleLiClickTech(event, index) {
     selectedLi.style.border = '5px solid #00821f';
 }
 
+/*---------------------------------------click on answer function---------------------------------------*/
 function addLiClickEventListenersTech() {
     listItem = document.getElementsByTagName('li');
     spanItem = document.getElementsByTagName('span');
@@ -167,6 +165,8 @@ function addLiClickEventListenersTech() {
         spanItem[i].addEventListener('click', handleLiClickTech);
     }
 }
+
+//////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
 /***************************************************English***************************************************/
 function displayQuestion(index) {
@@ -268,14 +268,12 @@ function showPopupMessage(message) {
     popup.classList.add('popup');
     popup.textContent = message;
     divQuestions.appendChild(popup);
-  
     // Hide the pop-up after a few seconds (adjust the timeout value as needed)
     setTimeout(() => {
-      popup.style.display = 'none';
+        popup.style.display = 'none';
     }, 3000); // 3 seconds in this example
-  }
+}
 let count = 0;
-
 
 btnEng.addEventListener('click', () => {
     // Check if an answer has been selected for the current question
@@ -313,24 +311,6 @@ btnEng.addEventListener('click', () => {
     console.log(`Number of Correct Answers (English): ${trueAnswersEnglish}`);
     updateTotalCorrectAnswers();
 });
-
-
-
-// for (let i = 0; i < 5; i++) {
-//   // Reset the trueAnswers count for each question
-//   trueAnswers = 0;
-
-//   for (const key in answersByQuestionE) {
-//     if (questionsData.English[i].trueAnswer === answersByQuestionE[key]) {
-//       trueAnswers++;
-//     }
-//   }
-
-//   console.log(`Question ${0 + 1}:`);
-// //   console.log(`True Answer: ${questionsData.English[0].trueAnswer}`);
-//   console.log(`User's Answer: ${answersByQuestionE[0]}`);
-//   console.log(`Number of Correct Answers: ${trueAnswers}`);
-// }
 
 /***************************************************IQ***************************************************/
 let currentQuestionIndexIQ = 0;
@@ -432,12 +412,12 @@ function displayIQ (){
         popup.classList.add('popup');
         popup.textContent = message;
         divQuestions.appendChild(popup);
-      
+
         // Hide the pop-up after a few seconds (adjust the timeout value as needed)
         setTimeout(() => {
-          popup.style.display = 'none';
+            popup.style.display = 'none';
         }, 3000); // 3 seconds in this example
-      }
+    }
     let count2 = 0;
 
 
@@ -606,7 +586,7 @@ function displayTech (){
                 document.body.innerHTML = `<div id="customModal" class="modal">
                     <div class="modal-content">
                         <p id="sure">Are you sure?</p>
-                        <button id="btnOK"><a href='./resultPage.html'>OK</a></button>
+                        <button id="btnOK"><a id="btnOK" href='./resultPage.html'>OK</a></button>
                         <button id="btnCancel">Cancel</button>
                     </div>
                 </div>`;
@@ -618,25 +598,6 @@ function displayTech (){
                 customModal.style.display = 'block'; // Show the modal
             });
 
-            // const btnOK = document.getElementById('btnOK');
-            // btnOK.addEventListener('click', function() {
-            //     // Perform actions when the user clicks OK
-            //     // document.body.style = 'red';
-                
-            //     console.log('User confirmed!');
-            //     customModal.style.display = 'none'; // Hide the modal
-            //     // window.location.assign('https://www.google.com');
-            //     // window.location.href = 'https://www.google.com';
-
-            //     ////////////////////////////////////////////////Here we must put the next page(result)
-            // });
-
-            // const btnCancel = document.getElementById('btnCancel');
-            // btnCancel.addEventListener('click', function() {
-            //     // Perform actions when the user clicks Cancel (optional)
-            //     console.log('User canceled!');
-            //     customModal.style.display = 'none'; // Hide the modal
-            // });
         }
 
         currentQuestionIndexTech++;
@@ -663,10 +624,7 @@ function displayTech (){
     console.log(`Number of Correct Answers (Technical): ${trueAnswersTech}`);
     updateTotalCorrectAnswers();
 
-        
-
     });
-    
 
 }
 

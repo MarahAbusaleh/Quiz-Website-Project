@@ -176,6 +176,10 @@ span{
     font-size: 23px;
     color: #ffffff;
 }
+#btnOK{
+    text-decoration: none;
+    color: white;
+}
 
 /**************************************************Mobaile**************************************************/
 
