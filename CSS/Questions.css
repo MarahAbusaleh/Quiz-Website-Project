@@ -1,0 +1,361 @@
+*{
+    padding: 0px;
+    margin: 0px;
+}
+body{
+    background-color: #def7e5;
+}
+
+#questionsPage{
+    background-color: white;
+    width: 90%;
+    height: 580px;
+    display: grid;
+    grid-template-columns: auto auto;
+    position: relative;
+    
+}
+#qImage{
+    width: 550px;
+    position: absolute;
+    right: 50px;
+}
+.btn{
+    height: 70px;
+    background-color: #00821f;
+    border: none;
+    color: white;
+    margin-left: 1183px;
+    text-align: center;
+    font-size: 25px;
+    padding: 10px;
+}
+ul{
+    list-style-type: none;
+}
+h2{
+    font-size: 50px;
+    text-align: center;
+    padding-top: 100px;
+    padding-left: 100px;
+}
+.Btn{
+    width: 200px;
+    height: 50px;
+    background-color: #00821f;
+    border: none;
+    color: white;
+    /* text-align: center; */
+    font-size: 25px;
+    margin-left: 95px;
+    border-radius: 10px;
+    font-weight: bolder;
+    margin-top: 50px;
+}
+p{
+    font-size: 40px;
+    font-weight: bold;
+    padding-top: 20px;
+    padding-left: 30px;
+    margin-bottom: 20px;
+    /* padding-left: 200px; */
+}
+
+#questions{
+    width: 700px;
+    margin-top: 50px;
+    padding-top: 40px;
+}
+li{
+    font-size: 30px;
+    width: 500px;
+    height: 50px;
+    background-color: #cccccc;
+    margin: 20px;
+    display: inline-block;
+    padding-top: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+}
+span{
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    background-color: #cccccc;
+    display: inline-block;
+    padding-top: 10px;
+    border-radius: 10px;
+    font-weight: bold;
+    margin-left: 20px;
+
+}
+#QNum{
+    font-size: 25px;
+    font-weight: bold;
+    margin-top: 40px;
+    margin-bottom: 10px;
+}
+/* .material-symbols-outlined{
+    text-align: center;
+} */
+/* .material-symbols-outlined {
+    font-variation-settings:
+    'FILL' 0,
+    'wght' 300,
+    'GRAD' 0,
+    'opsz' 10
+} */
+
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    background-color: #ffffff; /* White background color */
+    border: 1px solid #ccc;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(17, 17, 17, 0.1);
+    z-index: 9999;
+}
+
+.modal-content {
+    text-align: center;
+}
+
+/* OK button style */
+#btnOK {
+    background-color: #00821f;
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-right: 10px;
+}
+
+  /* Cancel button style (optional) */
+#btnCancel {
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+}
+
+  /* Center the buttons inside the modal */
+.modal-content button {
+    margin-top: 10px;
+}
+
+  /* Add a simple overlay to cover the rest of the page when the modal is shown */
+.modal.overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    z-index: 9998;
+}
+
+#sure{
+    font-size: 40px;
+    margin-right: 20px;
+}
+
+.popup {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    /* height: 200px; */
+    width: 150px;
+    transform: translate(-50%, -50%);
+    background-color: #00821f;
+    border: 1px solid #ccc;
+    padding: 10px;
+    border-radius: 5px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15);
+    font-size: 23px;
+    color: #ffffff;
+}
+
+/**************************************************Mobaile**************************************************/
+
+@media screen and (max-width: 480px){
+    #qImage{
+        display: none;
+    }
+    #questionsPage{
+        margin-top: 20%;
+        background-color: white;
+        width: 90%;
+        height: 600px;
+        display: flex;
+        align-items: center;
+    }
+    #questions{
+        padding: 0px;
+        /* width: 700px; */
+        margin-top: 0px;
+    }
+    h2{
+        font-size: 30px;
+        text-align: center;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .Btn{
+        width: 80%;
+        margin-left: 0px;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    p{
+        font-size: 30px;
+        padding-top: 0px;
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        /* padding-left: 200px; */
+    }
+    ul{
+        padding: 3px;
+    }
+    li{
+        font-size: 20px;
+        width: 200px;
+        height: 50px;
+        /* background-color: #cccccc; */
+        margin: 5px;
+        /* display: inline-block; */
+        /* padding-top: 10px; */
+        /* border-radius: 10px; */
+        /* font-weight: bold; */
+    }
+    span{
+        margin-left: 0px;
+        font-size: 20px;
+        width: 50px;
+        height: 50px;
+        /* background-color: #cccccc;
+        display: inline-block; */
+        /* padding-top: 10px;
+        border-radius: 10px;
+        font-weight: bold; */
+    
+    }
+    
+    .btn{
+        width: 90%;
+        height: 45px;
+        /* background-color: #00821f; */
+        /* border: none; */
+        /* color: white; */
+        margin-left: 16px;
+        text-align: center;
+        font-size: 23px;
+        padding: 10px;
+    }
+
+}
+
+/**************************************************Tablet**************************************************/
+
+@media screen and (min-width: 481px) and (max-width: 768px){
+
+    #qImage{
+        display: none;
+    }
+    #questionsPage{
+        /* margin-top: 10%; */
+        /* background-color: white; */
+        /* width: 90%; */
+        /* height: 600px; */
+        /* display: flex; */
+        align-items: center;
+        /* padding-top: 50px; */
+    }
+    #questions{
+        padding: 0px;
+        /* width: 700px; */
+        margin-top: 0px;
+    }
+    h2{
+        font-size: 50px;
+        text-align: center;
+        padding-top: 0px;
+        padding-left: 0px;
+    }
+    .Btn{
+        width: 50%;
+        height: 50px;
+        margin-left: 0px;
+        margin-top: 30px;
+        font-size: 20px;
+    }
+    p{
+        font-size: 40px;
+        /* padding-top: 0px; */
+        padding-left: 10px;
+        padding-right: 10px;
+        padding-bottom: 20px;
+        /* padding-left: 200px; */
+    }
+    ul{
+        margin: 10px;
+    }
+    li{
+        font-size: 30px;
+        width: 500px;
+        height: 50px;
+        /* background-color: #cccccc; */
+        /* margin: 5px; */
+        /* display: inline-block; */
+        /* padding-top: 10px; */
+        /* border-radius: 10px; */
+        /* font-weight: bold; */
+    }
+    span{
+        margin-left: 10px;
+        font-size: 30px;
+        width: 50px;
+        height: 50px;
+        /* background-color: #cccccc;
+        display: inline-block; */
+        /* padding-top: 10px;
+        border-radius: 10px;
+        font-weight: bold; */
+    
+    }
+    .btn{
+        width: 90%;
+        height: 50px;
+        /* background-color: #00821f; */
+        /* border: none; */
+        /* color: white; */
+        margin-left: 38px;
+        font-weight: bold;
+        /* text-align: center; */
+        font-size: 25px;
+        /* padding-top: 10px;
+        padding-bottom: 10px; */
+        padding: 10px;
+    }
+    .popup {
+        /* position: absolute; */
+        /* top: 50%;
+        left: 50%; */
+        /* height: 200px; */
+        width: 200px;
+        height: 100px;
+        padding-top: 38px;
+        /* transform: translate(-50%, -50%); */
+        /* background-color: #00821f;
+        border: 1px solid #ccc; */
+        /* padding: 10px; */
+        /* border-radius: 5px; */
+        /* box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15); */
+        font-size: 30px;
+        /* color: #ffffff; */
+    }
+
+}
+
