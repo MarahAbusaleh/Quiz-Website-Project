@@ -165,12 +165,12 @@ h1::after{
 #btnlog1:hover {
     background-color: #def7e5;
 }
-#btnlog1:active {
+#btnlog1:hover {
     /* background-color: #4fe414; */
     /* color: azure; */
     transform: translateY(4px);}
     /* .btnlog2:hover {background-color: white} */
-    #btnlog2:active {
+    #btnlog2:hover {
     background-color:#def7e5;
     /* color: azure; */
     transform: translateY(4px);
