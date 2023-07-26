@@ -587,9 +587,13 @@ function displayTech (){
                     <div class="modal-content">
                         <p id="sure">Are you sure?</p>
                         <button id="btnOK"><a id="btnOK" href='./resultPage.html'>OK</a></button>
-                        <button id="btnCancel">Cancel</button>
+                        <button id="btnCancel"><a id="btnCancel" href='./index.html'>Cancel</a></button>
                     </div>
                 </div>`;
+                // let Cancel= document.getElementById(btnCancel);
+                // Cancel.addEventListener('click', function(){
+                //     displayQuestionTech(8)
+                // });
 
                 const customModal = document.getElementById('customModal');
 

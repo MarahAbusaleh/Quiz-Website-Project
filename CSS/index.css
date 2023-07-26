@@ -33,6 +33,7 @@ body{
     grid-column: 2/3;
     justify-content: center;
     gap: 5px;
+    cursor: pointer;
 }
 #btnlog1{
     background-color: white;
@@ -101,6 +102,14 @@ h1{
     font-weight: bold ;
     margin-left: 5px;
     margin-top: 0px;
+    cursor: pointer;
+}
+
+#strbtn:hover{
+    cursor: pointer;
+    background-color: #13b84a;
+    transform: scale(1.1);
+    transition: 0.5s;
 }
 h1::after{
     content: " ";

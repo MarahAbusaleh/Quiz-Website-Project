@@ -1,9 +1,7 @@
-/* @import url("https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@100;200;300;400;500;600;700&family=Roboto+Slab:wght@100;200&display=swap"); */
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Roboto Slab", serif; */
 }
 body {
   background-color: #def7e5;
@@ -20,19 +18,16 @@ body {
   width: 380px;
   margin-left: 81px;
 }
-
 .form {
   display: flex;
   flex-direction: column;
   width: 50%;
   align-items: center;
 }
-
 .form h2 {
   font-size: 4rem;
   margin: 60px;
 }
-
 .emailBox {
   padding: 12px;
   width: 65%;
@@ -41,7 +36,6 @@ body {
   outline: none;
   border-radius: 10px;
 }
-
 .passBox {
   padding: 12px;
   width: 65%;
@@ -50,7 +44,6 @@ body {
   outline: none;
   border-radius: 10px;
 }
-
 #submit {
   padding: 12px 30px;
   width: 22%;
@@ -69,35 +62,30 @@ body {
   transform: scale(1.1);
   transition: 0.5s;
 }
-
 .side {
   display: flex;
   justify-content: center;
   align-items: center;
   width: 50%;
 }
-
 .side img {
   width: 550px;
 }
-
 p {
   color: grey;
 }
-
 .spann {
   color: #00821f;
   font-weight: bold;
   font-size: 15px;
 }
-
 span {
   font-size: 13px;
 }
 a{
     color: white;
     text-decoration: none;
-  }
+}
 
   /***************************************************Tablet****************************************************/
 @media screen and (min-width: 481px) and (max-width: 768px) {
@@ -112,7 +100,6 @@ a{
 
     /* outline: none; */
   }
- 
 }
 /***************************************************Mobile****************************************************/
 @media screen and (max-width: 480px) {

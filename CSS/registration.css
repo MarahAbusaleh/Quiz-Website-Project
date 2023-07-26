@@ -2,7 +2,6 @@
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  /* font-family: "Roboto Slab", serif; */
 }
 body {
   background-color: #def7e5;
@@ -26,7 +25,6 @@ body {
   font-size: 3rem;
   margin: 40px;
 }
-
 .box {
   padding: 12px;
   width: 65%;
@@ -35,7 +33,6 @@ body {
   outline: none;
   border-radius: 10px;
 }
-
 #submit {
   padding: 12px 30px;
   width: 22%;
@@ -54,7 +51,6 @@ body {
   transform: scale(1.1);
   transition: 0.5s;
 }
-
 .side {
   display: flex;
   justify-content: center;
@@ -67,40 +63,33 @@ a{
 .side img {
   width: 550px;
 }
-
 p {
   color: grey;
 }
-
 .spann {
   color: #00821f;
   font-weight: bold;
   font-size: 15px;
 }
-
 span {
   font-size: 13px;
 }
-
 .input-icon {
   width: 380px;
   margin-left: 81px;
 }
+
 /***************************************************Tablet****************************************************/
 @media screen and (min-width: 481px) and (max-width: 768px) {
   .side img {
     width: 400px;
   }
-
   .form h2 {
     font-size: 32px;
     margin: 40px;
   }
-
   #submit {
-    /* padding: 12px 30px; */
     width: 50%;
-
     margin-top: 20px;
     background-color: #00821f;
     color: white;
@@ -111,12 +100,12 @@ span {
     text-transform: uppercase;
   }
 }
+
 /***************************************************Mobile****************************************************/
 @media screen and (max-width: 480px) {
   .side img {
     display: none;
   }
-
   .form h2 {
     /* font-size: 25px;
     margin-left: 22%;
@@ -127,21 +116,12 @@ span {
     padding-top: 80px;
     padding-bottom: 60px;
   }
-
   .side {
     display: inline;
     justify-content: 0;
     align-items: 0;
     width: 0;
   }
-  /* .container {
-    background: white;
-    display: block;
-    height: 580px;
-    width: 90%;
-    margin: auto;
-    margin-top: 5%;
-  } */
   .container {
     display: block;
     height: 720px;
@@ -149,17 +129,14 @@ span {
     margin: auto;
     margin-top: 5%;
   }
-
   .form {
     display: inline;
     width: 0%;
   }
-
   .input-icon {
     width: 335px;
     margin-left: 55px;
   }
-
   #submit {
     padding: 0;
     width: 45%;
@@ -167,7 +144,6 @@ span {
     margin-top: 20px;
     margin-left: 112px;
   }
-
   p {
     font-size: larger;
     margin-left: 90px;
@@ -175,7 +151,6 @@ span {
     padding-bottom: 10px;
     font-weight: bold;
   }
-
   .spann {
     font-weight: bold;
     font-size: 19px;

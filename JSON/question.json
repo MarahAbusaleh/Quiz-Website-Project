@@ -138,17 +138,17 @@
     },
     {
       "question": "What is the bult-in method in JavaScript that reverses the order of the array elements?",
-      "firstAnswer": "changeOrder(order)",
+      "firstAnswer": "changeOrder()",
       "secondAnswer": "reverse()",
       "thirdAnswer": "sort(order)",
       "trueAnswer": "reverse()"
     },
     {
       "question": "What is the incorrect method among these that is not suitable for creating a date?",
-      "firstAnswer": "new Date(dateString)",
-      "secondAnswer": "new Date()",
-      "thirdAnswer": "new Date(seconds)",
-      "trueAnswer": "new Date(seconds)"
+      "firstAnswer": "Date(dateString)",
+      "secondAnswer": "Date()",
+      "thirdAnswer": "Date(seconds)",
+      "trueAnswer": "Date(seconds)"
     }
   ]
 }
